@@ -1,0 +1,11 @@
+server:
+  port: 8080
+  debug: true
+
+routes:
+  - name: "users-service"
+    path: "/users/*path"
+    target: "http://localhost:8081"
+  - name: "products-service"
+    path: "/products/*path"
+    target: "http://localhost:8082"
